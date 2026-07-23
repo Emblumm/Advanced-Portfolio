@@ -59,6 +59,10 @@ section {
     color: var(--olive-green) !important; 
 }
 
+.highlight-light {
+    color: var(--olive-green-light);
+}
+
 a {
     text-decoration: none;
 }
@@ -252,28 +256,89 @@ nav {
     border-radius: 20px;
     overflow: hidden;
     display: flex;
+    border: 6px solid #8b7355;
+    background: #f5f5f0;
+}
+
+.modal::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 29px,
+        #d0d0d0 29px,
+        #d0d0d0 30px
+    );
+}
+
+.modal__para {
+    margin-top: 25px;
+    line-height: 30px;
+    font-size: 17px;
+}
+
+.modal__title {
+    font-size: 29px;
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.modal__sub-title--about {
+    padding-bottom: 4px;
 }
 
 .modal__half {
     width: 50%;
     padding: 40px 72px;
+    position: relative;
+    z-index: 1;
+}
+
+.modal__half::before {
+    content: "";
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    bottom: 24px;
+    width: 1px;
+    background: rgba(117, 96, 67, 0.28);
 }
 
 .modal__about {
-    background-color: var(--paper-deep);
+    background-color: rgba(255, 255, 255, 0.38);
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .modal__contact {
-    background-color: var(--soft-ink);
-    color: var(--paper-white);
+    background-color: rgba(240, 231, 206, 0.75);
+    color: #3b311f;
 }
 
 .modal__languages {
     display: flex;
     flex-wrap: wrap;
 }
+
+.modal__language {
+    width: 25%;
+    padding: 16px;
+    margin-top: 24px;
+}
+
+.modal__language--img {
+    width: 100%;
+}
+
+.modal__sub-title {
+    margin: 12px 0 24px 0;
+}
+
+
 
 
 /* PROJECTS */
