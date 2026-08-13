@@ -273,6 +273,7 @@ nav {
     );
     background-position-y: 28px;
     z-index: 0;
+    
 }
 
 .modal__para {
@@ -302,7 +303,7 @@ nav {
 .modal__half::before {
     content: "";
     position: absolute;
-    left: 48px;
+    left: 52px;
     top: 0px;
     bottom: 0px;
     width: 1px;
@@ -311,11 +312,24 @@ nav {
     z-index: 1;
 }
 
+.modal__contact::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--soft-ink);
+    opacity: 0.3;
+    box-shadow: 4px 4px 0px rgb(0, 0, 0, 0.1);
+}
+
 .modal__about {
     background-color: rgba(255, 255, 255, 0.38);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 104px;
 }
 
 .modal__contact {
