@@ -268,9 +268,11 @@ nav {
         to bottom,
         transparent 0,
         transparent 29px,
-        #d0d0d0 29px,
-        #d0d0d0 30px
+        #b8d4f0 29px,
+        #b8d4f0 30px
     );
+    background-position-y: 28px;
+    z-index: 0;
 }
 
 .modal__para {
@@ -300,11 +302,13 @@ nav {
 .modal__half::before {
     content: "";
     position: absolute;
-    left: 24px;
-    top: 24px;
-    bottom: 24px;
+    left: 48px;
+    top: 0px;
+    bottom: 0px;
     width: 1px;
-    background: rgba(117, 96, 67, 0.28);
+    background: #c9372c;
+    opacity: 0.5;
+    z-index: 1;
 }
 
 .modal__about {
@@ -315,8 +319,8 @@ nav {
 }
 
 .modal__contact {
-    background-color: rgba(240, 231, 206, 0.75);
-    color: #3b311f;
+    background-color: rgba(255, 255, 255, 0.38);
+    line-height: 30px;
 }
 
 .modal__languages {
